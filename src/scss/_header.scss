@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+    height: 67px;
+    padding: 22px 33px 27px 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navigation-section {
+
+        .menu-mobile {
+            display: inline-block;
+            padding-right: 15px;
+        }
+
+        .logo-title {
+            display: inline-block;
+            padding-bottom: 8px;
+            font-weight: 800;
+            font-size: 28px;
+            letter-spacing: -1px;
+            color: black;
+        }
+    }
+
+    .user-section {
+        .cart-btn {
+            display: inline-block;
+            background-color: white;
+            border: unset;
+            padding: 0 22px;
+        }
+    
+        .profile-img {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            &:hover {
+                border-color:  $orange;
+            }
+            
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
