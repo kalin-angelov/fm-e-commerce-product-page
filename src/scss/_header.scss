@@ -29,6 +29,18 @@ header {
             background-color: white;
             border: unset;
             padding: 0 22px;
+            position: relative;
+
+            .num-of-products {
+                padding: 0 5px;
+                border: 2px solid $orange;
+                border-radius: 15px;
+                background-color: $orange;
+                color: white;
+                font-size: 10px;
+                position: absolute;
+                margin: -10px -12px;
+            }
         }
     
         .profile-img {
