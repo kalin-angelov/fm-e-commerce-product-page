@@ -23,6 +23,17 @@ header .user-section .cart-btn {
   background-color: white;
   border: unset;
   padding: 0 22px;
+  position: relative;
+}
+header .user-section .cart-btn .num-of-products {
+  padding: 0 5px;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 15px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  margin: -10px -12px;
 }
 header .user-section .profile-img {
   display: inline-block;
