@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "../context/Context";
 
 const Home = () => {
-    const { quantity, setQuantity } = useContext(Context);
+    const { quantity, setQuantity, numOfProducts ,setNumOfProducts } = useContext(Context);
 
     const quantityHandler = (action) => {
         if (action === "plus") {
@@ -15,6 +15,11 @@ const Home = () => {
                 setQuantity(quantity => --quantity);
             };
         };
+    };
+
+    const onAddToCart = () => {
+        setNumOfProducts(numOfProducts => numOfProducts += quantity);
+        setQuantity(0);
     };
 
     return (
@@ -35,7 +40,7 @@ const Home = () => {
                         {quantity}
                         <img src="/images/icon-plus.svg" alt="plus" onClick={() => quantityHandler("plus")} />
                     </div>
-                    <button className="add-cart-btn button">
+                    <button className="add-cart-btn button" onClick={onAddToCart}>
                         <img src="/images/icon-cart.svg" alt="cart icon" />
                         Add to cart
                     </button>
