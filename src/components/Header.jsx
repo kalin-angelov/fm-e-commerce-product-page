@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <div className="navigation-section">
         <figure className="menu-mobile">
-          <img src="/public/images/icon-menu.svg" alt="menu icon" />
+          <img src="/images/icon-menu.svg" alt="menu icon" />
         </figure>
         
         <Link className="logo-title" to="/">sneakers</Link>
@@ -13,11 +13,11 @@ const Header = () => {
       
       <div className="user-section">
         <button className="cart-btn">
-          <img src="/public/images/icon-cart.svg" alt="shopping cart icon" />
+          <img src="/images/icon-cart.svg" alt="shopping cart icon" />
         </button>
 
         <figure className="profile-img">
-          <img src="/public/images/image-avatar.png" alt="profile image" />
+          <img src="/images/image-avatar.png" alt="profile image" />
         </figure>
       </div>
     </header>

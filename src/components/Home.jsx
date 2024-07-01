@@ -31,12 +31,12 @@ const Home = () => {
                 </div>
                 <div className="buttons-container">
                     <div className="quantity-btn button">
-                        <img src="/public/images/icon-minus.svg" alt="minus" onClick={() => quantityHandler("minus")} />
+                        <img src="/images/icon-minus.svg" alt="minus" onClick={() => quantityHandler("minus")} />
                         {quantity}
-                        <img src="/public/images/icon-plus.svg" alt="plus" onClick={() => quantityHandler("plus")} />
+                        <img src="/images/icon-plus.svg" alt="plus" onClick={() => quantityHandler("plus")} />
                     </div>
                     <button className="add-cart-btn button">
-                        <img src="/public/images/icon-cart.svg" alt="cart icon" />
+                        <img src="/images/icon-cart.svg" alt="cart icon" />
                         Add to cart
                     </button>
                 </div>
