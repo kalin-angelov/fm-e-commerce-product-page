@@ -8,10 +8,13 @@ import Home from "./components/Home";
 
 function App() {
     const [quantity, setQuantity] = useState(0);
+    const [numOfProducts, setNumOfProducts] = useState(0);
 
     const initialValue = {
         quantity,
-        setQuantity
+        setQuantity,
+        numOfProducts,
+        setNumOfProducts
     };
 
     return (
