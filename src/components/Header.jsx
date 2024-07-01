@@ -1,25 +1,31 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
+import { Context } from "../context/Context";
+
 const Header = () => {
+  const { numOfProducts } = useContext(Context);
+  
   return (
     <header>
-      <div className="navigation-section">
+        <div className="navigation-section">
         <figure className="menu-mobile">
-          <img src="/images/icon-menu.svg" alt="menu icon" />
+            <img src="/images/icon-menu.svg" alt="menu icon" />
         </figure>
         
         <Link className="logo-title" to="/">sneakers</Link>
-      </div>
-      
-      <div className="user-section">
+        </div>
+        
+        <div className="user-section">
         <button className="cart-btn">
-          <img src="/images/icon-cart.svg" alt="shopping cart icon" />
+            <img src="/images/icon-cart.svg" alt="shopping cart icon" />
+            <span className="num-of-products">{numOfProducts}</span>
         </button>
 
         <figure className="profile-img">
-          <img src="/images/image-avatar.png" alt="profile image" />
+            <img src="/images/image-avatar.png" alt="profile image" />
         </figure>
-      </div>
+        </div>
     </header>
   );
 };
