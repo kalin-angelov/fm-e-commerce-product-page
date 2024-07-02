@@ -24,6 +24,20 @@ const Home = () => {
 
     return (
         <main>
+            <div className="img-slider">
+                <picture>
+                    <img src="/public/images/image-product-1.jpg" alt="" />
+                </picture>
+                <div className="slider-btn">
+                    <figure className="btn-container">
+                        <img src="/public/images/icon-previous.svg" alt="arrow img" />
+                    </figure>
+                    <figure className="btn-container">
+                        <img src="/public/images/icon-next.svg" alt="arrow img" />
+                    </figure>
+                </div>
+            </div>
+           
             <section className="main-page-container">
                 <h1>sneaker company</h1>
                 <h2>Fall Limited Edition Sneakers</h2>
