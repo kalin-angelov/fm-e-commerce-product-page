@@ -19,7 +19,7 @@ const Header = () => {
         <div className="user-section">
         <button className="cart-btn">
             <img src="/images/icon-cart.svg" alt="shopping cart icon" />
-            <span className="num-of-products">{numOfProducts}</span>
+            {numOfProducts != 0 && <span className="num-of-products">{numOfProducts}</span>}
         </button>
 
         <figure className="profile-img">
