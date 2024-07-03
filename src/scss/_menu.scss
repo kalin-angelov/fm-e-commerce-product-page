@@ -1,0 +1,44 @@
+@mixin menuStyle {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .navigation {
+        transition: 0.4s;
+        padding: 25px;
+        background-color: white;
+        height: 100dvh;
+    
+        img {
+            padding-bottom: 40px;
+        }
+
+        li {
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+.burger-menu {
+    @include menuStyle();
+    width: 100%;
+    z-index: 1;
+    left: 0;
+
+    .navigation {
+        width: 250px;
+    }
+}
+
+.burger-menu-close {
+    @include menuStyle();
+    width: 0;
+    left: -250px;
+    transition: 0.5s;
+
+    .navigation {
+        width: 0;
+    }
+}

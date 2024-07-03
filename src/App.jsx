@@ -14,7 +14,7 @@ function App() {
         quantity,
         setQuantity,
         numOfProducts,
-        setNumOfProducts
+        setNumOfProducts,
     };
 
     return (
