@@ -18,12 +18,12 @@ function App() {
     };
 
     return (
+        <Context.Provider value={initialValue}>
         <>
-            <Context.Provider value={initialValue}>
-                <Header/>
-                <Home />
-            </Context.Provider>
+            <Header/>
+            <Home />
         </>
+        </Context.Provider>
     );
 };
 

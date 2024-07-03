@@ -193,8 +193,9 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
   width: 0;
-  left: -250px;
+  left: -500px;
   transition: 0.5s;
+  z-index: 0;
 }
 .burger-menu-close .navigation {
   transition: 0.4s;

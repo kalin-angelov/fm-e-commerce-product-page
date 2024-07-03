@@ -35,8 +35,9 @@
 .burger-menu-close {
     @include menuStyle();
     width: 0;
-    left: -250px;
+    left: -500px;
     transition: 0.5s;
+    z-index: 0;
 
     .navigation {
         width: 0;
