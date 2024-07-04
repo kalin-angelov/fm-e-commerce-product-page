@@ -7,11 +7,13 @@ header {
   align-items: center;
 }
 header .navigation-section .menu-mobile {
+  display: inline-block;
   padding-right: 15px;
   background-color: white;
   border: unset;
 }
 header .navigation-section .logo-title {
+  display: inline-block;
   padding-bottom: 8px;
   font-weight: 800;
   font-size: 28px;
@@ -194,8 +196,8 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   background-color: rgba(0, 0, 0, 0.6);
   width: 0;
   left: -500px;
-  transition: 0.5s;
   z-index: 0;
+  transition: 0.3s;
 }
 .burger-menu-close .navigation {
   transition: 0.4s;

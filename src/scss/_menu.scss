@@ -36,8 +36,8 @@
     @include menuStyle();
     width: 0;
     left: -500px;
-    transition: 0.5s;
     z-index: 0;
+    transition: 0.3s;
 
     .navigation {
         width: 0;

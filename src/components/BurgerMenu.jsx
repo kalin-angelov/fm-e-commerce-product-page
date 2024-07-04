@@ -1,26 +1,8 @@
-import { useEffect, useRef } from "react";
-
 const BurgerMenu = ( { burgerHandler ,setBurgerHandler } ) => {
-    const ref = useRef();
-
-    useEffect(() => {
-        const handler = (e) => {
-            if (!ref.current.contains(e.target)) {
-                setBurgerHandler(!burgerHandler);
-            }
-        };
-
-        window.addEventListener("mousedown", handler);
-
-        return () => {
-            window.removeEventListener("mousedown", handler);
-        }
-
-    },[]);
 
     return (
         <aside className={burgerHandler ? "burger-menu-close" : "burger-menu"} >
-            <nav className="navigation" ref={ref}>
+            <nav className="navigation">
                 <figure onClick={() => setBurgerHandler(!burgerHandler)}>
                     <img src="/public/images/icon-close.svg" alt="X btn" />
                 </figure>

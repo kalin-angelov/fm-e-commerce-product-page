@@ -7,14 +7,16 @@ header {
     align-items: center;
 
     .navigation-section {
-
+       
         .menu-mobile {
+            display: inline-block;
             padding-right: 15px;
             background-color: white;
             border: unset;
         }
 
         .logo-title {
+            display: inline-block;
             padding-bottom: 8px;
             font-weight: 800;
             font-size: 28px;
@@ -29,7 +31,7 @@ header {
             border: unset;
             padding: 0 22px;
             position: relative;
-
+           
             .num-of-products {
                 padding: 0 5px;
                 border: 2px solid $orange;
