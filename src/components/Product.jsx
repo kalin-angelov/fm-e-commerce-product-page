@@ -1,7 +1,7 @@
-const Product = ({ cartHandler, setCartHandler, quantity}) => {
+const Product = ({ cartOpen, setCartOpen, quantity}) => {
 
     const onCheckOut = () => {
-        setCartHandler(!cartHandler)
+        setCartOpen(!cartOpen)
     };
 
     return (
