@@ -8,16 +8,16 @@ import Cart from "./Cart";
 
 const Header = () => {
     const { numOfProducts } = useContext(Context);
-    const [burgerHandler ,setBurgerHandler] = useState(true);
-    const [cartHandler ,setCartHandler] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [cartOpen ,setCartOpen] = useState(false);
 
     const onMenuClick = () => {
-        setBurgerHandler(!burgerHandler);
-        setCartHandler(true);
+        setMenuOpen(!menuOpen);
+        setCartOpen(false);
     };
 
     const onCartClick = () => {
-        setCartHandler(!cartHandler);
+        setCartOpen(!cartOpen);
     };
 
     return (
@@ -28,8 +28,8 @@ const Header = () => {
                 </figure>
                 
                 <BurgerMenu 
-                    burgerHandler={burgerHandler}
-                    setBurgerHandler={setBurgerHandler}
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
                 />
                 <Link className="logo-title" to="/">sneakers</Link>
             </div>
@@ -41,8 +41,8 @@ const Header = () => {
                 </button>
 
                 <Cart 
-                    cartHandler={cartHandler}
-                    setCartHandler={setCartHandler}
+                    cartOpen={cartOpen}
+                    setCartOpen={setCartOpen}
                 />
 
                 <figure className="profile-img">
