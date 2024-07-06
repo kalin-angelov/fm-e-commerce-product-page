@@ -4,7 +4,7 @@ import { Context } from "../context/Context";
 import Product from "./Product";
 
 const Cart = ( { cartOpen ,setCartOpen } ) => {
-  const { quantity } = useContext(Context);
+  const { numOfProducts, setNumOfProducts } = useContext(Context);
   const cartRef = useRef();
 
   useEffect(() => {
@@ -28,8 +28,13 @@ const Cart = ( { cartOpen ,setCartOpen } ) => {
     <section className={cartOpen ? "cart-container" : "cart-container-close"} ref={cartRef}>
       <h3>Cart</h3>
       <div className="cart-content">
-        {quantity !== 0 ?
-          <Product carOpen={cartOpen} setCartOpen={setCartOpen} />
+        {numOfProducts !== 0 ?
+          <Product 
+            carOpen={cartOpen} 
+            setCartOpen={setCartOpen}  
+            numOfProducts={numOfProducts}
+            setNumOfProducts={setNumOfProducts}
+          />
           :
           <p className="message">Your cart is empty.</p>
         }
