@@ -6,9 +6,9 @@ const Slick = () => {
     const sliderControl = (e) => {
         const btn = e.target.id;
         if (btn === "next") {
-            slideNumber === 4 ? setSlideNumber(1) : setSlideNumber(slideNumber++);
+            slideNumber === 4 ? setSlideNumber(1) : setSlideNumber(slideNumber + 1);
         } else {
-            setSlideNumber(setSlideNumber--);
+            slideNumber === 1 ? setSlideNumber(4) : setSlideNumber(slideNumber - 1);
         }
     };
 
