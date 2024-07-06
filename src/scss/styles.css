@@ -52,34 +52,6 @@ header .user-section .profile-img img {
   height: 25px;
 }
 
-main .img-slider {
-  position: relative;
-}
-main .img-slider img {
-  width: 100%;
-  height: 300px;
-}
-main .img-slider .slider-btn {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 16px;
-  top: 130px;
-}
-main .img-slider .slider-btn .btn-container {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-  text-align: center;
-  padding: 11px;
-  cursor: pointer;
-}
-main .img-slider .slider-btn .btn-container img {
-  width: 12px;
-  height: 12px;
-}
 main .main-page-container {
   padding: 0 27px;
 }
@@ -270,4 +242,80 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   font-weight: 700;
   color: #7d7f84;
   padding: 80px;
+}
+
+.product-container .product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+}
+.product-container .product .product-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.product-container .product .product-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+.product-container .product section {
+  margin-right: 20px;
+}
+.product-container .product section h4 {
+  color: hsl(219, 9%, 45%);
+  line-height: 1.5;
+  font-weight: 400;
+}
+.product-container .product section .sneaker-price {
+  color: hsl(219, 9%, 45%);
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+.product-container .product section .sneaker-price .final-price {
+  font-weight: 700;
+  color: black;
+}
+.product-container .product .delete-btn {
+  border: unset;
+}
+.product-container .checkout-btn {
+  width: 312px;
+  height: 57px;
+  background-color: hsl(26, 100%, 55%);
+  border: unset;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.img-slider {
+  position: relative;
+}
+.img-slider img {
+  width: 100%;
+  height: 300px;
+}
+.img-slider .slider-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
+  top: 130px;
+}
+.img-slider .slider-btn .btn-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 11px;
+  cursor: pointer;
+  border: unset;
+}
+.img-slider .slider-btn .btn-container img {
+  width: 12px;
+  height: 12px;
 }/*# sourceMappingURL=styles.css.map */
