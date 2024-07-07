@@ -7,6 +7,7 @@ const Slick = () => {
     const { windowSize } = useContext(Context);
     const [slideNumber, setSlideNumber] = useState(1);
     const [imgNum, setImgNum] = useState(1);
+    const [lightBox, setLightBox] = useState(false);
     
     const sliderControl = (e) => {
         const btn = e.target.id;
@@ -20,6 +21,10 @@ const Slick = () => {
     const onFocus = (e) => {
         const idNum = e.target.id;
         setImgNum(idNum);
+    };
+
+    const handleLightBox = () => {
+        setLightBox(!lightBox)
     };
 
     return (
@@ -54,7 +59,7 @@ const Slick = () => {
                 :
                 <>
                     <div className="img-select">
-                        <figure className="on-focus">
+                        <figure className="on-focus" onClick={handleLightBox}>
                             <img src={`/public/images/image-product-${imgNum}.jpg` } alt="product" />
                         </figure>
                         <ul className="img-catalog">
@@ -73,7 +78,7 @@ const Slick = () => {
                         </ul>
                     </div>
 
-                    <LightBoxGallery />
+                    {lightBox && <LightBoxGallery handleLightBox={handleLightBox} />}
                 </>
                 
             }

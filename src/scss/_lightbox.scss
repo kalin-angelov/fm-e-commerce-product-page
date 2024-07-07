@@ -4,9 +4,94 @@
     height: 100dvh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    
+    .light-box-img-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .slider-btn {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 112%;
+            top: 238px;
+    
+            .btn-container {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                background-color: white;
+                text-align: center;
+                padding: 11px;
+                cursor: pointer;
+
+                &:hover {
+                    svg {
+                        stroke: $orange;
+                    }
+                }
+
+                svg {
+                    stroke: #1D2026;
+                }
+            }
+        }
+
+        .close-btn {
+            align-self: self-end;
+            background-color: transparent;
+            width: 25px;
+            height: 25px;
+
+            svg {
+                width: inherit;
+                height: inherit;
+                fill: white;
+                &:hover {
+                    fill: $orange;
+                }
+            }
+        }
+        
+        .light-box-on-focus {
+            margin: 20px 0 36px 0;
+
+            img {
+                width: 450px;
+                height: 450px;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .light-box-img-catalog {
+        display: flex;
+        gap: 26px;
+
+        li {
+            cursor: pointer;
+            
+            img {
+                width: 93px;
+                height: 93px;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            
+            .img-on {
+                background-color: $orange;
+            }
+        }
+    }
 }

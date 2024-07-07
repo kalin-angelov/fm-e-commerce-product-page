@@ -26,5 +26,6 @@ body {
 @media screen and (min-width: 1440px) {
   body {
     margin: 0 164px;
+    min-height: 100dvh;
   }
 }/*# sourceMappingURL=App.css.map */
