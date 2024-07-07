@@ -45,7 +45,7 @@ const BurgerMenu = ( {setCartOpen} ) => {
                         <nav className="navigation-burger" ref={menuRef}>
 
                             <button onClick={() => setMenuOpen(!menuOpen)}>
-                                <img src="/public/images/icon-close.svg" alt="X btn" />
+                                <img src="/images/icon-close.svg" alt="X btn" />
                             </button>
 
                             <ul>
