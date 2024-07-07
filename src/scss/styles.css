@@ -6,6 +6,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header .user-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header .user-section .profile-img {
   width: 30px;
   height: 30px;
@@ -25,11 +30,6 @@ header .user-section .profile-img img {
   header {
     height: 112px;
     border-bottom: 1px solid rgba(130, 132, 137, 0.2431372549);
-  }
-  header .user-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   header .user-section .profile-img {
     width: 53px;
@@ -51,7 +51,7 @@ main .main-page-container h1 {
   color: hsl(219, 9%, 45%);
 }
 main .main-page-container h2 {
-  margin: 20px 0;
+  margin: 18px 0;
   font-size: 28px;
   font-weight: 700;
 }
@@ -124,13 +124,66 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   background-color: #ffac6a;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 570px) {
   main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  main .main-page-container {
+    width: 570px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    gap: 125px;
     min-height: 100dvh;
     padding: 90px 50px;
+  }
+  main .main-page-container {
+    padding: 0;
+    width: 405px;
+  }
+  main .main-page-container h2 {
+    font-size: 40px;
+  }
+  main .main-page-container .price-tag {
+    flex-direction: column;
+  }
+  main .main-page-container .price-tag .discounted-price {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  main .main-page-container .price-tag .discounted-price .discount {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 8px;
+  }
+  main .main-page-container .price-tag .regular-price {
+    padding: 16px 0;
+  }
+  main .main-page-container .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+  }
+  main .main-page-container .buttons-container .quantity-btn {
+    width: 145px;
+    height: 50px;
+  }
+  main .main-page-container .buttons-container .add-cart-btn {
+    width: 247px;
+    height: 50px;
+  }
+  main .main-page-container .buttons-container .add-cart-btn img {
+    width: 18px;
+    height: 16px;
+    margin: 0 16px;
   }
 }
 .navigation-section {
@@ -161,6 +214,7 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   padding: 25px;
   background-color: white;
   height: 100dvh;
+  width: 250px;
 }
 .navigation-section .burger-menu .navigation-burger img {
   padding-bottom: 40px;
@@ -187,6 +241,7 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   padding: 25px;
   background-color: white;
   height: 100dvh;
+  width: 250px;
 }
 .navigation-section .burger-menu-close .navigation-burger img {
   padding-bottom: 40px;
@@ -200,6 +255,11 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   width: 0;
 }
 
+@media screen and (min-width: 570px) {
+  .navigation-section .burger-menu .navigation-burger {
+    width: 350px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .navigation-section {
     align-items: center;
@@ -308,6 +368,7 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   .cart-btn .num-of-products {
     padding: 0 8px;
     font-size: 14px;
+    margin: -12px -15px;
   }
 }
 .product-container .product {
@@ -384,4 +445,43 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
 .img-slider .slider-btn .btn-container img {
   width: 12px;
   height: 12px;
+}
+
+.img-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.img-select .on-focus img {
+  width: 445px;
+  height: 445px;
+  border-radius: 15px;
+}
+.img-select .img-catalog {
+  display: flex;
+  gap: 28px;
+}
+.img-select .img-catalog li {
+  cursor: pointer;
+}
+.img-select .img-catalog li img {
+  width: 90px;
+  height: 90px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+.img-select .img-catalog li img:hover {
+  opacity: 0.5;
+}
+.img-select .img-catalog li .img-on {
+  opacity: 0.5;
+  background-color: hsl(26, 100%, 55%);
+}
+
+@media screen and (min-width: 570px) {
+  .img-slider {
+    width: 570px;
+  }
 }/*# sourceMappingURL=styles.css.map */

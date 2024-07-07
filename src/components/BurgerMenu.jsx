@@ -1,19 +1,15 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 
 import { Link } from "react-router-dom";
+
+import { Context } from "../context/Context";
 
 const BurgerMenu = ( {setCartOpen} ) => {
     const menuRef = useRef();
     const [menuOpen, setMenuOpen] = useState(false);
-    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const { windowSize } = useContext(Context);
 
     useEffect(() => {
-        const handleSize = () => {
-            setWindowSize(window.innerWidth);
-        }
-
-        window.addEventListener("resize", handleSize);
-
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 setMenuOpen(false);
@@ -25,7 +21,6 @@ const BurgerMenu = ( {setCartOpen} ) => {
         }
 
         return () => {
-            window.removeEventListener("resize", handleSize);
             document.removeEventListener("mousedown", handleClickOutside);
         };
 

@@ -1,7 +1,7 @@
 const Product = ({ cartOpen, setCartOpen, numOfProducts, setNumOfProducts }) => {
 
     const onCheckOut = () => {
-        setCartOpen(!cartOpen)
+        setCartOpen(false);
         setNumOfProducts(0);
     };
 

@@ -8,6 +8,7 @@
         padding: 25px;
         background-color: white;
         height: 100dvh;
+        width: 250px;
     
         img {
             padding-bottom: 40px;
@@ -58,6 +59,16 @@
     
         .navigation {
             width: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .navigation-section {
+        .burger-menu {
+            .navigation-burger {
+                width: 350px;
+            }
         }
     }
 }

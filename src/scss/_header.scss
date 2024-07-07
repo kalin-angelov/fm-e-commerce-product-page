@@ -7,7 +7,10 @@ header {
     align-items: center;
 
     .user-section {
-       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .profile-img {
             width: 30px;
             height: 30px;
@@ -32,10 +35,7 @@ header {
         border-bottom: 1px solid #8284893e;
 
         .user-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+    
             .profile-img {
                 width: 53px;
                 height: 53px;
