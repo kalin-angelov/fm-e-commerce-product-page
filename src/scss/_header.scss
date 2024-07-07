@@ -6,46 +6,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .navigation-section {
-       
-        .menu-mobile {
-            display: inline-block;
-            padding-right: 15px;
-            background-color: white;
-            border: unset;
-        }
-
-        .logo-title {
-            display: inline-block;
-            padding-bottom: 8px;
-            font-weight: 800;
-            font-size: 28px;
-            letter-spacing: -1px;
-            color: black;
-        }
-    }
-
     .user-section {
-        .cart-btn {
-            background-color: white;
-            border: unset;
-            padding: 0 22px;
-            position: relative;
-           
-            .num-of-products {
-                padding: 0 5px;
-                border: 2px solid $orange;
-                border-radius: 15px;
-                background-color: $orange;
-                color: white;
-                font-size: 10px;
-                position: absolute;
-                margin: -10px -12px;
-            }
-        }
-    
+       
         .profile-img {
-            display: inline-block;
             width: 30px;
             height: 30px;
             cursor: pointer;
@@ -58,6 +21,29 @@ header {
             img {
                 width: 25px;
                 height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 112px;
+        border-bottom: 1px solid #8284893e;
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .profile-img {
+                width: 53px;
+                height: 53px;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
             }
         }
     }

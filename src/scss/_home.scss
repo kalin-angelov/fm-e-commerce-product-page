@@ -99,3 +99,14 @@ main {
     }
     
 }
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100dvh;
+
+        padding: 90px 50px;
+    }
+}

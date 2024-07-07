@@ -26,6 +26,21 @@
     }
 }
 
+.cart-btn {
+    padding: 0 22px;
+  
+    .num-of-products {
+        padding: 0 5px;
+        border: 2px solid $orange;
+        border-radius: 15px;
+        background-color: $orange;
+        color: white;
+        font-size: 10px;
+        position: absolute;
+        margin: -10px -12px;
+    }
+}
+
 .cart-container {
    @include cartStyle();
    top: 75px;
@@ -37,4 +52,19 @@
     @include cartStyle();
     top: -750px;
     width: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .cart-btn {
+        padding: 0 60px;
+        img {
+            width: 26px;
+            height: 26px;
+        }
+
+        .num-of-products {
+            padding: 0 8px;
+            font-size: 14px;
+        }
+    }
 }

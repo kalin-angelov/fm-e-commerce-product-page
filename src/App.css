@@ -6,6 +6,8 @@
 
 button {
   cursor: pointer;
+  border: unset;
+  background-color: white;
 }
 
 ul {
@@ -19,4 +21,10 @@ a {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0 164px;
+  }
 }/*# sourceMappingURL=App.css.map */
