@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/e-commerce-product-page-solution---react-sassscss-6wJzW0QpZx)
-- Live Site URL: [Add live site URL here](https://fm-e-commerce-product-page-phi.vercel.app/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/e-commerce-product-page-solution---react-sassscss-6wJzW0QpZx)
+- Live Site URL: [Click here](https://fm-e-commerce-product-page-phi.vercel.app/)
 
 ## My process
 
