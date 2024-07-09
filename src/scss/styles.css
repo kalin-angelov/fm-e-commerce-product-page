@@ -40,54 +40,54 @@ header .user-section .profile-img img {
     height: 48px;
   }
 }
-main .main-page-container {
+main .main-container .summary-container {
   padding: 0 27px;
 }
-main .main-page-container h1 {
+main .main-container .summary-container h1 {
   margin-top: 25px;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
   color: hsl(219, 9%, 45%);
 }
-main .main-page-container h2 {
+main .main-container .summary-container h2 {
   margin: 18px 0;
   font-size: 28px;
   font-weight: 700;
 }
-main .main-page-container .summary {
+main .main-container .summary-container .summary {
   color: hsl(219, 9%, 45%);
   font-size: 15px;
   line-height: 1.5;
 }
-main .main-page-container .price-tag {
+main .main-container .summary-container .price-tag {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
 }
-main .main-page-container .price-tag .discounted-price {
+main .main-container .summary-container .price-tag .discounted-price {
   font-size: 24px;
   font-weight: 700;
 }
-main .main-page-container .price-tag .discounted-price .discount {
+main .main-container .summary-container .price-tag .discounted-price .discount {
   color: white;
   background-color: black;
   font-size: 14px;
   padding: 5px 12px;
   border-radius: 8px;
 }
-main .main-page-container .price-tag .regular-price {
+main .main-container .summary-container .price-tag .regular-price {
   text-decoration: line-through;
   color: hsl(219, 9%, 45%);
   font-weight: 700;
 }
-main .main-page-container .buttons-container {
+main .main-container .summary-container .buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 18px;
 }
-main .main-page-container .buttons-container .quantity-btn {
+main .main-container .summary-container .buttons-container .quantity-btn {
   padding: 20px 23px;
   display: flex;
   justify-content: space-between;
@@ -99,13 +99,13 @@ main .main-page-container .buttons-container .quantity-btn {
   border: unset;
   font-weight: 700;
 }
-main .main-page-container .buttons-container .quantity-btn img {
+main .main-container .summary-container .buttons-container .quantity-btn img {
   cursor: pointer;
 }
-main .main-page-container .buttons-container .quantity-btn img:hover {
+main .main-container .summary-container .buttons-container .quantity-btn img:hover {
   opacity: 0.5;
 }
-main .main-page-container .buttons-container .add-cart-btn {
+main .main-container .summary-container .buttons-container .add-cart-btn {
   background-color: hsl(26, 100%, 55%);
   color: black;
   font-size: 16px;
@@ -116,71 +116,73 @@ main .main-page-container .buttons-container .add-cart-btn {
   font-weight: 700;
   cursor: pointer;
 }
-main .main-page-container .buttons-container .add-cart-btn img {
+main .main-container .summary-container .buttons-container .add-cart-btn img {
   width: 18px;
   height: 16px;
   margin: 0 16px;
 }
-main .main-page-container .buttons-container .add-cart-btn:hover {
+main .main-container .summary-container .buttons-container .add-cart-btn:hover {
   background-color: #ffac6a;
 }
 
 @media screen and (min-width: 570px) {
   main {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  main .main-page-container {
+  main .summary-container {
     width: 570px;
   }
 }
 @media screen and (min-width: 1024px) {
   main {
-    flex-direction: row;
+    min-height: 80dvh;
+  }
+  main .main-container {
+    display: flex;
     gap: 125px;
     padding: 90px 50px;
   }
-  main .main-page-container {
+  main .main-container .summary-container {
     padding: 0;
     width: 405px;
   }
-  main .main-page-container h2 {
+  main .main-container .summary-container h2 {
     font-size: 40px;
   }
-  main .main-page-container .price-tag {
+  main .main-container .summary-container .price-tag {
     flex-direction: column;
   }
-  main .main-page-container .price-tag .discounted-price {
+  main .main-container .summary-container .price-tag .discounted-price {
     font-size: 26px;
     font-weight: 700;
   }
-  main .main-page-container .price-tag .discounted-price .discount {
+  main .main-container .summary-container .price-tag .discounted-price .discount {
     color: white;
     background-color: black;
     font-size: 14px;
     padding: 5px 12px;
     border-radius: 8px;
   }
-  main .main-page-container .price-tag .regular-price {
+  main .main-container .summary-container .price-tag .regular-price {
     padding: 16px 0;
   }
-  main .main-page-container .buttons-container {
+  main .main-container .summary-container .buttons-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 18px;
   }
-  main .main-page-container .buttons-container .quantity-btn {
+  main .main-container .summary-container .buttons-container .quantity-btn {
     width: 145px;
     height: 50px;
   }
-  main .main-page-container .buttons-container .add-cart-btn {
+  main .main-container .summary-container .buttons-container .add-cart-btn {
     width: 247px;
     height: 50px;
   }
-  main .main-page-container .buttons-container .add-cart-btn img {
+  main .main-container .summary-container .buttons-container .add-cart-btn img {
     width: 18px;
     height: 16px;
     margin: 0 16px;
@@ -487,17 +489,18 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
     width: 570px;
   }
 }
-.main-container {
+.light-box-container {
   position: absolute;
   top: 0;
+  right: 0;
   height: 100dvh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-container .light-box-img-select {
+.light-box-container .light-box-img-select {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -505,14 +508,14 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   position: relative;
   cursor: pointer;
 }
-.main-container .light-box-img-select .slider-btn {
+.light-box-container .light-box-img-select .slider-btn {
   position: absolute;
   display: flex;
   justify-content: space-between;
   width: 112%;
   top: 238px;
 }
-.main-container .light-box-img-select .slider-btn .btn-container {
+.light-box-container .light-box-img-select .slider-btn .btn-container {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -521,50 +524,50 @@ main .main-page-container .buttons-container .add-cart-btn:hover {
   padding: 11px;
   cursor: pointer;
 }
-.main-container .light-box-img-select .slider-btn .btn-container:hover svg {
+.light-box-container .light-box-img-select .slider-btn .btn-container:hover svg {
   stroke: hsl(26, 100%, 55%);
 }
-.main-container .light-box-img-select .slider-btn .btn-container svg {
+.light-box-container .light-box-img-select .slider-btn .btn-container svg {
   stroke: #1D2026;
 }
-.main-container .light-box-img-select .close-btn {
+.light-box-container .light-box-img-select .close-btn {
   align-self: self-end;
   background-color: transparent;
   width: 25px;
   height: 25px;
 }
-.main-container .light-box-img-select .close-btn svg {
+.light-box-container .light-box-img-select .close-btn svg {
   width: inherit;
   height: inherit;
   fill: white;
 }
-.main-container .light-box-img-select .close-btn svg:hover {
+.light-box-container .light-box-img-select .close-btn svg:hover {
   fill: hsl(26, 100%, 55%);
 }
-.main-container .light-box-img-select .light-box-on-focus {
+.light-box-container .light-box-img-select .light-box-on-focus {
   margin: 20px 0 36px 0;
 }
-.main-container .light-box-img-select .light-box-on-focus img {
+.light-box-container .light-box-img-select .light-box-on-focus img {
   width: 450px;
   height: 450px;
   border-radius: 15px;
 }
-.main-container .light-box-img-catalog {
+.light-box-container .light-box-img-catalog {
   display: flex;
   gap: 26px;
 }
-.main-container .light-box-img-catalog li {
+.light-box-container .light-box-img-catalog li {
   cursor: pointer;
 }
-.main-container .light-box-img-catalog li img {
+.light-box-container .light-box-img-catalog li img {
   width: 93px;
   height: 93px;
   border: 2px solid transparent;
   border-radius: 15px;
 }
-.main-container .light-box-img-catalog li img:hover {
+.light-box-container .light-box-img-catalog li img:hover {
   opacity: 0.5;
 }
-.main-container .light-box-img-catalog li .img-on {
+.light-box-container .light-box-img-catalog li .img-on {
   background-color: hsl(26, 100%, 55%);
 }/*# sourceMappingURL=styles.css.map */
