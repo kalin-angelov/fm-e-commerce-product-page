@@ -19,7 +19,7 @@ const LightBoxGallery = ( { handleLightBox } ) => {
     };
 
     return (
-        <div className="main-container">
+        <div className="light-box-container">
 
             <div className="light-box-img-select">
                 <button className="close-btn" onClick={handleLightBox}>
